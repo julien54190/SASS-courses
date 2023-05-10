@@ -1,0 +1,11 @@
+.para
+    background-color: orange
+    font-size: $font-size-big
+    width: pixToVw(600)
+    +flex-center
+    // @include flex-center()
+    +circle(200px)
+    +max-break-point($tablet)
+        background-color: lightblue
+    +max-break-point($mobile)
+        background-color: lightgreen

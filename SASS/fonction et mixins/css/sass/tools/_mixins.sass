@@ -1,0 +1,23 @@
+@mixin flex-center
+    display: flex
+    justify-content: center
+    width: pixToVw(600)
+    
+@mixin circle($size)
+    width: $size
+    height: $size
+    border-radius: 100%
+
+@mixin size($width, $height)
+    width: $width
+    height: $height
+
+// @mixin size($width, $height: auto)
+//     width: $width
+//     height: $height
+
+@mixin max-break-point($size)
+    @media screen and (max-width: $size) 
+        @content
+        
+    
